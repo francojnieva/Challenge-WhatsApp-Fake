@@ -8,52 +8,180 @@
     <link rel="shortcut icon" href="./assets/favicon-whatsapp.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>(3) WhatsApp</title>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="navbar_list">
-            <li>
-                <img class="navbar_list-chatIcon" src="./assets/chats-icon.png" alt="Icono de chats">
-                <span class="navbar_list-notification">3</span>
-                <span class="navbar_list-tooltip">Chats</span>
-            </li>
-            <li>
-                <img src="./assets/comunity-icon.png" alt="Icono de comunidad">
-                <span class="navbar_list-tooltip">Comunidades</span>
-            </li>
-            <li><img src="./assets/canal-icon.png" alt="Icono de canales">
-                <span class="navbar_list-tooltip">Canales</span>
-            </li>
-            <li>
-                <img src="./assets/chats-icon.png" alt="Icono de estados">
-                <span class="navbar_list-tooltip">Estados</span>
-            </li>
-            <li>
-                <img src="./assets/box-icon.png" alt="Icono de archivos">
-                <span class="navbar_list-tooltip">Archivados</span>
-            </li>
-            <li>
-                <img src="./assets/star-icon.png" alt="Icono de destacados">
-                <span class="navbar_list-tooltip">Destacado</span>
-            </li>
-        </ul>
-        <ul class="navbar_list">
-            <li>
-                <img src="./assets/setting-icon.png" alt="Icono de configuración">
-                <span class="navbar_list-tooltip">Configuración</span>
-            </li>
-            <li>
-                <img src="./assets/chats-icon.png" alt="Foto de perfil">
-                <span class="navbar_list-tooltip">Perfil</span>
-            </li>
-        </ul>
-    </nav>
-    <section class="chats">
-
-    </section>
-    
+    <header class="header_mobile">
+        <img class="header_mobile-logo" src="./assets/logo-whatsapp.png" alt="Logo Whatsapp">
+        <div class="header_mobile-list-img">
+            <img src="./assets/cámara-icon.png" alt="Icono de cámara">
+            <img src="./assets/lupa-icon.png" alt="Icono de lupa">
+            <img src="./assets/menu-icon.png" alt="Icono de menú">
+        </div>
+    </header>
+    <main class="main">
+        <nav class="navbar_mobile">
+            <ul class="navbar_mobile_list">
+                <li>
+                    <img class="navbar_mobile_list-notification" src="./assets/chats-icon.png" alt="Icono de chat">
+                    <p>Chats</p>
+                    <span class="navbar_desktop_list-notification">3</span>
+                </li>
+                <li>
+                    <img src="./assets/comunity-icon.png" alt="Icono de novedades">
+                    <p>Novedades</p>
+                </li>
+                <li>
+                    <img src="./assets/comunity-icon.png" alt="Icono de comunidades">
+                    <p>Comunidades</p>
+                </li>
+                <li>
+                    <img src="./assets/comunity-icon.png" alt="Icono de llamadas">
+                    <p>Llamadas</p>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar_desktop">
+            <ul class="navbar_desktop_list">
+                <li>
+                    <img class="navbar_desktop_list-chatIcon" src="./assets/chats-icon.png" alt="Icono de chats">
+                    <span class="navbar_desktop_list-notification">3</span>
+                    <span class="navbar_desktop_list-tooltip">Chats</span>
+                </li>
+                <li>
+                    <img src="./assets/comunity-icon.png" alt="Icono de comunidad">
+                    <span class="navbar_desktop_list-tooltip">Comunidades</span>
+                </li>
+                <li><img src="./assets/canal-icon.png" alt="Icono de canales">
+                    <span class="navbar_desktop_list-tooltip">Canales</span>
+                </li>
+                <li>
+                    <img src="./assets/chats-icon.png" alt="Icono de estados">
+                    <span class="navbar_desktop_list-tooltip">Estados</span>
+                </li>
+                <li>
+                    <img src="./assets/box-icon.png" alt="Icono de archivos">
+                    <span class="navbar_desktop_list-tooltip">Archivados</span>
+                </li>
+                <li>
+                    <img src="./assets/star-icon.png" alt="Icono de destacados">
+                    <span class="navbar_desktop_list-tooltip">Destacado</span>
+                </li>
+            </ul>
+            <ul class="navbar_desktop_list">
+                <li>
+                    <img src="./assets/setting-icon.png" alt="Icono de configuración">
+                    <span class="navbar_desktop_list-tooltip">Configuración</span>
+                </li>
+                <li>
+                    <img src="./assets/chats-icon.png" alt="Foto de perfil">
+                    <span class="navbar_desktop_list-tooltip">Perfil</span>
+                </li>
+            </ul>
+        </nav>
+        <section class="chats">
+            <section class="chats_header_desktop">
+                <div class="chats_header_desktop-first-block">
+                    <h2>Chats</h2>
+                    <figure>
+                        <img src="./assets/more-chat-icon.png" title="Nuevo chat" alt="Icono de nuevo chat">
+                        <img src="./assets/menu-icon.png" title="Menú" alt="Icono de menú ">
+                    </figure>
+                </div>
+                <div class="chats_header_desktop-second-block">
+                    <input type="search" placeholder="Buscar">
+                    <img class="filter-icon" src="./assets/filter-icon.png" title="Filtro de chats no leídos" alt="Icono de filtro de chat">
+                    <img class="lupa-icon" src="./assets/lupa-icon.png" alt="Icono de lupa">
+                </div>
+            </section>
+            <section class="chats_container">
+                <article class="chats_container-chat">
+                    <img class="photo_profile" src="./assets/franco-nieva.jpg" title="Foto de perfil" alt="Foto de perfil">
+                    <div class="chats_container-chat_message">
+                        <div class="chat_unread">
+                            <h3>Mamá</h3>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                            <img src="./assets/arrow-icon.png" class="chat_unread-notification-arrow"></img>
+                        </div>
+                        <small>martes</small>
+                    </div>
+                </article>
+                <article class="chats_container-chat">
+                    <img class="photo_profile" src="./assets/franco-nieva.jpg" title="Foto de perfil" alt="Foto de perfil">
+                    <div class="chats_container-chat_message">
+                        <div class="chat_unread">
+                            <h3>Mamá</h3>
+                            <p class="chat_unread-message">Lorem ipsum dolor sit, amet</p>
+                            <span class="chat_unread-notification">2</span>
+                            <img src="./assets/arrow-icon.png" class="chat_unread-notification-arrow"></img>
+                        </div>
+                        <small>martes</small>
+                    </div>
+                </article>
+                <article class="chats_container-chat">
+                    <img class="photo_profile" src="./assets/franco-nieva.jpg" title="Foto de perfil" alt="Foto de perfil">
+                    <div class="chats_container-chat_message">
+                        <div class="chat_unread">
+                            <h3>Mamá</h3>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                            <img src="./assets/arrow-icon.png" class="chat_unread-notification-arrow"></img>
+                        </div>
+                        <small>lunes</small>
+                    </div>
+                </article>
+                <article class="chats_container-chat">
+                    <img class="photo_profile" src="./assets/franco-nieva.jpg" title="Foto de perfil" alt="Foto de perfil">
+                    <div class="chats_container-chat_message">
+                        <div class="chat_unread">
+                            <h3>Mamá</h3>
+                            <p class="chat_unread-message">Lorem ipsum dolor sit, amet</p>
+                            <span class="chat_unread-notification">1</span>
+                            <img src="./assets/arrow-icon.png" class="chat_unread-notification-arrow"></img>
+                        </div>
+                        <small>20/04/2024</small>
+                    </div>
+                </article>
+                <article class="chats_container-chat">
+                    <img class="photo_profile" src="./assets/franco-nieva.jpg" title="Foto de perfil" alt="Foto de perfil">
+                    <div class="chats_container-chat_message">
+                        <div class="chat_unread">
+                            <h3>Mamá</h3>
+                            <p class="chat_unread-message">Lorem ipsum dolor sit, amet</p>
+                            <span class="chat_unread-notification">2</span>
+                            <img src="./assets/arrow-icon.png" class="chat_unread-notification-arrow"></img>
+                        </div>
+                        <small>12/04/2024</small>
+                    </div>
+                </article>
+                <article class="chats_container-chat">
+                    <img class="photo_profile" src="./assets/franco-nieva.jpg" title="Foto de perfil" alt="Foto de perfil">
+                    <div class="chats_container-chat_message">
+                        <div class="chat_unread">
+                            <h3>Mamá</h3>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                            <img src="./assets/arrow-icon.png" class="chat_unread-notification-arrow"></img>
+                        </div>
+                        <small>10/04/2024</small>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="download_whatsapp_container">
+            <section>
+                <img class="laptop_image" src="./assets/download-wp.png" alt="Laptops">
+                <div>
+                    <h1>Descarga WhatsApp para Windows</h1>
+                    <p>Descarga la aplicación para Windows y haz llamadas, comparte pantalla y disfruta de una experiencia más rápida</p>
+                    <button>Descargar de Microsoft Store</button>
+                </div>
+            </section>
+            <div class="personal_message_container">
+                <img class="candado_icon" src="./assets/candado-icon.png" alt="Icono de un candado">
+                <p class="personal_message">Tus mensajes personales están cifrados de extremo a extremo</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
