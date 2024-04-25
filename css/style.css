@@ -2,4 +2,64 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F2F5;
+    width: 3.5rem;
+    min-height: 100vh;
+    padding: .5rem 0rem;
+    color: #fff;
+}
+
+.navbar_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar_list li {
+    list-style: none;
+    margin: .8rem 0rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar_list-chatIcon {
+    background-color: #D9DBDF;
+    border-radius: 100%;
+    padding: .5rem;
+}
+
+.navbar_list-notification {
+    position: absolute;
+    left: 1.5rem;
+    top: 0rem;
+    font-size: .75rem;
+    background-color: #25D366;
+    padding: .2rem .4rem;
+    border-radius: 100%;
+    
+}
+
+.navbar_list-tooltip {
+    position: absolute;
+    background-color: #272525;
+    font-size: .8rem;
+    padding: .4rem .8rem;
+    border-radius: 4rem;
+    top: 0rem;
+    left: 2.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navbar_list li:hover .navbar_list-tooltip {
+    visibility: visible;
+    opacity: 1;
 }
