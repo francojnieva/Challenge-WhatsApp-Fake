@@ -222,7 +222,7 @@
 }
 
 .chats_container-chat:hover {
-    background-color: #F5F6F6;
+    background-color: #f5f5f5;
     cursor: pointer;
 }
 
@@ -246,16 +246,21 @@
     margin: .0rem 1rem 0rem 0rem;
 }
 
+.hasstate {
+    border: .18rem solid #25D366;
+    padding: .07rem;
+}
+
 .chats_container-chat_message {
     position: relative;
     display: flex;
     justify-content: space-between;
-    color: #5d656b;
+    color: #737374;
     width: 100%;
     padding-right: .5rem;
     padding-bottom: 1rem;
     @media screen and (min-width: 1024px) {
-        border-bottom: .1rem solid #F5F6F6;
+        border-bottom: .1rem solid #f5f5f5;
     }
 }
 
@@ -280,6 +285,7 @@
 
 .chat_unread .chat_unread-message {
     font-weight: 600;
+    color: #5a646d;
 }
 
 .chat_unread  .chat_unread-notification {
