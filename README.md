@@ -11,5 +11,5 @@ Si bien no era necesario que sea responsiva, quise ir más allá, haciendo que l
 
 ### Ver proyecto
 
-Puedes verlo haciendo clic [aquí](https://web-whatsapp-fake.netlify.app/).
+Puedes verlo haciendo clic [aquí](https://whatsapp-fake.vercel.app/).
 
